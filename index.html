@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body> 
+  <div class=" ">
+    <div class=" min-h-screen bg-[url('/img/first.png')] bg-center bg-cover px-28 py-5 relative h-screen items-center">
+      <nav class="">
+              <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex h-16 items-center justify-between">
+                  <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+                    <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                      <span class="absolute -inset-0.5"></span>
+                      <span class="sr-only">Open main menu</span>
+                      <!--
+                        Icon when menu is closed.
+            
+                        Menu open: "hidden", Menu closed: "block"
+                      -->
+                      <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                      <!--
+                        Icon when menu is open.
+            
+                        Menu open: "block", Menu closed: "hidden"
+                      -->
+                      <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    
+                    <div class="hidden sm:ml-6 sm:block">
+                      <div class="flex space-x-4">
+                        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                        <a href="#" class="rounded-md  px-3 py-2 text-sm font-medium text-black hover:bg-gray-700 hover:text-white" aria-current="page">Dashboard</a>
+                        <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-700 hover:text-white">Team</a>
+                        <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-700 hover:text-white">Projects</a>
+                        <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-700 hover:text-white">Calendar</a>
+                      </div>
+                    </div>
+                    <div class="  ml-40">
+                      <img class="h-8 w-auto text-black" src="img/logo12.png" alt="Your Company">
+                    </div>
+                  </div>
+                  <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                      <a class="mr-5" href=""><i class="fa-solid fa-phone"></i></a>
+                      <p class="mr-5">95049400394</p>
+                    
+                    <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                      <span class="absolute -inset-1.5"></span>
+                      <span class="sr-only">View notifications</span>
+                      <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                      </svg>
+                    </button>
+                  
+      
+            
+                    <!-- Profile dropdown -->
+                    
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Mobile menu, show/hide based on menu state. -->
+              <div class="sm:hidden" id="mobile-menu">
+                <div class="space-y-1 px-2 pb-3 pt-2">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
+                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+                  <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+                </div>
+              </div>
+            </nav>
+            <div class="text-center  justify-center items-center py-40 "><h1 class="  text-2xl md:text-6xl items-center ">The <span class="text-blue-500"> #1</span> site real estate <br>
+              professionals trust*</h1>
+              <p class="text-center pt-5">From as low as $10 per day with limited time offer discounts.</p>
+              <a class="mt-5 underline decoration-solid" href="">Sale</a> <a class="pl-5" href="">Rent</a>
+              <div class="mt-5">
+                
+<form class="max-w-md mx-auto">   
+  <label for="default-search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+  <div class="relative">
+      <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+          </svg>
+      </div>
+      <input type="search" id="default-search" class="block w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search Mockups, Logos..." required />
+      <button type="submit" class="text-white absolute end-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Search</button>
+  </div>
+</form>
+
+              </div>
+            </div>
+            
+          </div>
+          <div class="text-center mt-20 ">
+            <h1 class="font-medium text-xl">Explore Our Properties </h1>
+            <p class="text-sm">Lorem ipsum dolor sit amet</p>
+            <div class="flex items-center justify-between mt-5 px-40 sm:">
+              <div class="pr-10 sm:pr-5 "><img class="h-338.11 w-256  rounded-xl " src="img/s1.png" alt="Your Company ">
+              </div>
+              <div class="pr-10"><img class="h-338.11 w-256 rounded-xl" src="img/s2.png" alt="Your Company"></div>
+              <div class="pr-10"><img class="h-338.11 w-256 rounded-xl" src="img/s3.png" alt="Your Company"></div>
+              <div class="pr-10"><img class="h-338.11 w-256 rounded-xl" src="img/s4.png" alt="Your Company"></div>
+              <div class="pr-10"><img class="h-338.11 w-256 rounded-xl" src="img/s5.png" alt="Your Company"></div>
+            </div>
+          </div>
+          <div class="text-center items-center  mt-20 ">
+            <div class="md:text-2xl text-xl mt-5 font-medium ">Our mission is to redefine real estate <br>
+              in the customer's favor.
+              <p class="text-sm">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class=" lg:flex md:flex-wrap  justify-between mt-20 ml-6  px-40">
+              <div class="text-start"><h1 class="text-orange-600 font-medium text-5xl ">5.2M</h1>
+                <h3 class="text-2xl mt-5 font-medium">Owned from properties <br>
+                  transactions</h3>
+                  <p>Pellentesque egestas elementum <br>
+                    egestas faucibus sem.</p>
+              </div>
+              <div class="text-start"><h1 class="text-orange-600 font-medium text-5xl">7K+</h1>
+                <h3 class="text-2xl mt-5 font-medium">Properties For <br>
+                  Buy
+                  </h3>
+                  <p>Pellentesque egestas elementum <br>
+                    egestas faucibus sem.</p></div>
+              <div class="text-start"><h1 class="text-orange-600 font-medium text-5xl">4K+</h1>
+                <h3 class="text-2xl mt-5 font-medium">Properties Buy <br>
+                  Sell</h3>
+                  <p>Pellentesque egestas elementum <br>
+                    egestas faucibus sem.</p></div>
+              <div class="text-start"><h1 class="text-orange-600 font-medium text-5xl">221+</h1>
+                <h3 class="text-2xl mt-5 font-medium">Daily Completed <br>
+                  Transactions</h3>
+                  <p>Pellentesque egestas elementum <br>
+                    egestas faucibus sem.</p></div>
+            </div>
+          </div>
+          <div>
+            <div class="mt-20 text-center text-2xl font-medium"><h1 > Discover Our Best Deals </h1>
+            <p class="text-sm">Lorem ipsum dolor sit amet</p> </div>
+            <div class="lg:flex justify-between  mt-10 ml-6 px-40">
+              <div class="pr-10"><img class="rounded-s-2xl" src="img/t1.png" alt="Your Company">    <h6 class="font-medium">Skyper Pool Apartment</h6>
+              <p class="text-sm">1020 Bloomingdale Ave</p></div>
+              
+              <div class="pr-10"><img class="rounded-s-2xl" src="img/t2.png" alt="Your Company"><h6 class="font-medium">North Dillard Street</h6>
+                <p class="text-sm">4330 Bell Shoals Rd</p></div>
+              <div class="pr-10"><img class="rounded-s-2xl" src="img/t3.png" alt="Your Company"><h6 class="font-medium">Eaton Garth Penthouse</h6>
+                
+                <p class="text-sm">7722 18th Ave, Brooklyn</p></div>
+            </div>
+          </div>
+          <div>
+            <div class="text-center text-2xl font-medium mt-40"><h1 class="text-4xl">Explore Cities</h1>
+              <p class="text-sm">Lorem ipsum dolor sit amet</p></div>
+            <div class="flex justify-between px-40 mt-10">
+              <div class="pr-10"><img class="" src="img/f1.png" alt="Your Company">
+                <p class="text-sm mt-2">2 Properties</p>
+                <h6 class="font-medium">Chicago</h6>
+              </div>
+              <div class="pr-10"><img class="" src="img/f2.png" alt="Your Company">
+                <p class="text-sm mt-2">2 Properties</p>
+                <h6 class="font-medium">Los Angeles</h6></div>
+              <div class="pr-10"><img class="" src="img/f3.png" alt="Your Company">
+                <p class="text-sm mt-2">2 Properties</p>
+                <h6 class="font-medium">Miami</h6></div>
+              <div class="pr-10"><img class="" src="img/f4.png" alt="Your Company">
+                <p class="text-sm mt-2">2 Properties</p>
+                <h6 class="font-medium">Florida</h6></div>
+              <div class="pr-10"><img class="" src="img/f5.png" alt="Your Company">
+                <p class="text-sm mt-2">2 Properties</p>
+                <h6 class="font-medium">New York</h6></div>
+            </div>
+          </div>
+          <div>
+            <div class="text-center  font-medium mt-40"><h1 class="font-medium text-2xl">Recent Properties for Rent</h1>
+              <p class="text-sm">Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="lg:flex justify-between mt-10 px-40"> 
+              <div class="pr-10"><img class="rounded-s-2xl" src="img/fi1.png" alt="Your Company"><h6 class="font-medium">Eaton Garth Penthouse</h6>
+                
+                <p class="text-sm">7722 18th Ave, Brooklyn</p>
+              </div>
+            <div class="pr-10"><img class="rounded-s-2xl" src="img/fi2.png" alt="Your Company"><h6 class="font-medium">Eaton Garth Penthouse</h6>
+                
+              <p class="text-sm">7722 18th Ave, Brooklyn</p></div>
+            <div class="pr-10"><img class="rounded-s-2xl" src="img/fi3.png" alt="Your Company"><h6 class="font-medium">Eaton Garth Penthouse</h6>
+                
+              <p class="text-sm">7722 18th Ave, Brooklyn</p></div>
+            <div class="pr-10"><img class="rounded-s-2xl" src="img/fi4.png" alt="Your Company"><h6 class="font-medium">Eaton Garth Penthouse</h6>
+                
+              <p class="text-sm">7722 18th Ave, Brooklyn</p></div></div>
+           </div>
+           <div class="text-center  font-medium mt-40 "><h1 class="font-medium text-2xl">Recent Properties for Sale</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="lg:flex justify-between mt-10 px-40"> 
+            <div class="pr-10"><img class="rounded-s-2xl" src="img/fi1.png" alt="Your Company">
+              <h6 class="font-medium">Eaton Garth Penthouse</h6>
+                
+              <p class="text-sm">7722 18th Ave, Brooklyn</p></div>
+          <div class="pr-10"><img class="rounded-s-2xl" src="img/fi2.png" alt="Your Company"><h6 class="font-medium">Eaton Garth Penthouse</h6>
+                
+            <p class="text-sm">7722 18th Ave, Brooklyn</p></div>
+          <div class="pr-10"><img class="rounded-s-2xl" src="img/fi3.png" alt="Your Company"><h6 class="font-medium">Eaton Garth Penthouse</h6>
+                
+            <p class="text-sm">7722 18th Ave, Brooklyn</p></div>
+          <div class="pr-10"><img class="rounded-s-2xl" src="img/fi4.png" alt="Your Company"><h6 class="font-medium">Eaton Garth Penthouse</h6>
+                
+            <p class="text-sm">7722 18th Ave, Brooklyn</p></div></div>
+         </div>
+         <div class="mt-20 mx-20 items-center">
+          
+          <h1 class="text-2xl font-medium text-center">How It works? Find a perfect home</h1>
+          <p class="text-sm text-center">Lorem ipsum dolor sit amet</p>
+          <div class="lg:flex justify-between mt-10 ml-6 items-center">
+            <div class="mt-20"><img src="./img/Icon end.png" alt="">
+              <h1 class="font-medium text-2xl text-start">Find Real Estate</h1>
+            <p>Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco <br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+              <img class="mt-10" src="./img/Icon end1.png" alt="">
+              <h1 class="font-medium text-2xl  text-start">Find Real Estate</h1>
+              <p>Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                <img class="mt-10" src="./img/Vector.png" alt="">
+                <h1 class="font-medium text-2xl ">Find Real Estate</h1>
+                <p>Sumo petentium ut per, at his wisim utinam adipiscing. Est ei graeco <br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing</p></div>
+            <div><img class="h-748.91 w-685" src="img/seve.png" alt="Your Company"></div>
+          </div>
+         </div>
+      
+         <div class="mt-20">
+          <div class="min-h-screen bg-[url('/img/second.png')] bg-center bg-cover px-28 py-5 relative h-screen">
+            <div class="items-center text-center  justify-center items-center py-40 "><h1 class="text-6xl">Discover a place you'll <br>
+              love to live</h1>
+            <p class="text-sm pt-5">Pellentesque egestas elementum egestas faucibus sem. Velit nunc <br>
+              egestas ut morbi. Leo diam diam</p>
+              <button class="mt-5 bg-blue-500 rounded-full py-2 px-6 text-white">View Properties </button>
+            </div>
+             
+          </div>
+         </div>
+      
+         <div>
+          <div class="flex justify-between mt-20 mx-20 items-center">
+            <div><img class="h-685 w-685" src="img/mko.png" alt="Your Company"></div>
+            <div class="mt-20"><h1 class="font-medium text-4xl">Why You Should Work <br>
+              With Us</h1>
+              <p class="mt-5">Pellentesque egestas elementum egestas faucibus sem. Velit nunc egestas ut <br>
+                morbi. Leo diam diam nibh eget fermentum massa pretium. Mi mauris nulla ac <br>
+                dictum ut mauris non.</p>
+                <div class="flex justify-between">
+                  <div><h1 class="font-medium text-xl mt-5">Buy or Rent Homes</h1>
+                    <p class="mt-5">We sell your home at the best market <br>
+                      price and very quickly as well.</p>
+                  </div>
+                  <div>
+                    <h1 class="font-medium text-xl mt-5">Trusted by Thousands</h1>
+                    <p class="mt-5">We offer you free consultancy to get a <br>
+                      loan for your new home.</p>
+                      
+                  </div>
+                </div>
+                <button class="mt-5 bg-blue-500 rounded-full py-2 px-6 text-white">Learn More </button>
+               
+            </div>
+          </div>
+         </div>
+         <div>
+          <div class="text-center mt-20"><h6>Thousands of world’s leading companies trust Space</h6></div>
+          <div class="flex justify-between px-40 mt-10">
+            <div><img class="" src="img/b1.png" alt="Your Company"></div>
+            <div><img class="" src="img/b2.png" alt="Your Company"></div>
+            <div><img class="" src="img/b3.png" alt="Your Company"></div>
+            <div><img class="" src="img/b4.png" alt="Your Company"></div>
+            <div><img class="" src="img/b5.png" alt="Your Company"></div>
+            <div><img class="" src="img/b6.png" alt="Your Company"></div>
+          </div>
+         </div>
+      
+         <div>
+          <div class=" bg-black mt-40  py-40 flex items-center justify-center">
+            <div class=" text-center">
+              <img class="ml-40 mt-5"  src="img/icon.png" alt="">
+              <h1 class="text-white mt-5">Stay Up to Date</h1>
+              <p class="text-white mt-5">Subscribe to our newsletter to receive our weekly feed.</p>
+      
+            </div>
+      
+          </div>
+         </div>
+         <footer class="bg-[#222121] ">
+          <div class="flex justify-between items-center px-40 text-white py-5">
+            <div class="">Copyright &copy;2024. JustHome</div>
+          <div ><img class="" src="img/logo.png" alt="" srcset=""></div>
+          <div>
+            <div class="flex justify-between items-center ">
+              <a class=" mr-5" href=""><i class="fa-brands fa-facebook"></i></a>
+              <a class=" mr-5" href=""><i class="fa-brands fa-twitter"></i></a>
+             <a class=" mr-5" href=""> <i class="fa-brands fa-linkedin"></i></a>
+             <a class=" mr-5" href=""> <i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+         </footer>
+  </div>
+   
+    
+    
+      
+</body>
+</html>
